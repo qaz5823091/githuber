@@ -1,0 +1,14 @@
+targets:
+  $default:
+    builders:
+      graphql_codegen:
+        options:
+          clients:
+            - graphql_flutter
+          assetsPath: lib/data/queries/**.graphql
+          outputDirectory: ../generated
+          scalars:
+            ISODataTime:
+              type: DateTime
+            JSON:
+              type: Map<String, dynamic>
