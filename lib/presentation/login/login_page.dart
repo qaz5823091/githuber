@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../middle_page.dart';
+import '../auth_page.dart';
 import 'login_provider.dart';
 
 class LoginPage extends ConsumerStatefulWidget {
@@ -21,7 +21,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
             context,
           ).pushReplacement(
             MaterialPageRoute<void>(
-              builder: (_) => const MiddlePage(),
+              builder: (_) => const AuthPage(),
             ),
           );
         },
