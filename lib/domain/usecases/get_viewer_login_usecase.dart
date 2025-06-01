@@ -2,14 +2,17 @@ import 'package:graphql_flutter/graphql_flutter.dart';
 
 import '../../core/exceptions/githuber_exceptions.dart';
 import '../../data/generated/get_viewr_login.graphql.dart';
+import 'gql_usercase.dart';
 
-class GetViewerLoginUsecase {
+class GetViewerLoginUsecase implements GqlUsercase<String> {
   GetViewerLoginUsecase({
     required this.client,
   });
 
-  final GraphQLClient client;
+  @override
+  late GraphQLClient client;
 
+  @override
   Future<String> execute() async {
     final result = await client.query$GetViewerLogin(
       Options$Query$GetViewerLogin(
