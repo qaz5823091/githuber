@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 
 import 'firebase_options.dart';
-import 'presentation/auth_page.dart';
+import 'presentation/splash/splash_page.dart';
 
 void main() async {
   await initHiveForFlutter();
@@ -22,7 +22,7 @@ class MainApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
       ),
-      home: const AuthPage(),
+      home: const SplashPage(),
     );
   }
 }
