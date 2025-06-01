@@ -2,7 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../core/token_util.dart';
+import '../core/util/token_util.dart';
 import 'home/home_page.dart';
 import 'login/login_page.dart';
 

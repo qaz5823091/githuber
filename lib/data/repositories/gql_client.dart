@@ -2,7 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import '../../core/token_util.dart';
+import '../../core/util/token_util.dart';
 
 part 'gql_client.g.dart';
 
