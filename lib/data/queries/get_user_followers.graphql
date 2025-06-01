@@ -1,0 +1,23 @@
+query GetUserFollowers(
+    $username: String!,
+    $after: String,
+) {
+    user(
+        login: $username
+    ) {
+        followers(
+            first: 15,
+            after: $after
+        ) {
+            totalCount
+            nodes {
+                login
+                avatarUrl
+            }
+            pageInfo {
+                hasNextPage
+                endCursor
+            }
+        }
+    }
+}
