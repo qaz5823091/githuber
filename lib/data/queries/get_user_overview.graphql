@@ -1,0 +1,47 @@
+query GetUserOverView($user: String!) {
+    user(login: $user) {
+        login
+        avatarUrl
+        bio
+        followers(
+            first: 3
+        ) {
+            totalCount
+            nodes {
+                login
+                avatarUrl
+            }
+        }
+        following (
+            first: 3
+        ) {
+            totalCount
+            nodes {
+                login
+                avatarUrl
+            }
+        }
+        starredRepositories(
+            first: 3
+            orderBy: {
+                field: STARRED_AT,
+                direction: DESC
+            }
+        ) {
+            nodes {
+                name
+                openGraphImageUrl
+            }
+        }
+        contributionsCollection {
+            contributionCalendar {
+                weeks {
+                    contributionDays {
+                        date
+                        contributionCount
+                    }
+                }
+            }
+        }
+    }
+}
