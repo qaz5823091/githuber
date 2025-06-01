@@ -8,6 +8,7 @@ import 'gql_usercase.dart';
 
 class GetUserUsecase implements GqlUsercase<User> {
   GetUserUsecase({
+    required this.client,
     required this.name,
   });
 
