@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../auth_page.dart';
+import '../../auth_gate.dart';
 import 'splash_provider.dart';
 
 class SplashPage extends ConsumerStatefulWidget {
@@ -17,7 +17,7 @@ class _SplashPageState extends ConsumerState<SplashPage> {
     ref.listen(splashProvider, (_, current) {
       current.whenData((_) {
         Navigator.of(context).pushReplacement(
-          MaterialPageRoute<void>(builder: (_) => const AuthPage()),
+          MaterialPageRoute<void>(builder: (_) => const AuthGate()),
         );
       });
     });

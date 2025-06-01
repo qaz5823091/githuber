@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/util/token_util.dart';
-import 'home/home_page.dart';
-import 'login/login_page.dart';
+import 'pages/home/home_page.dart';
+import 'pages/login/login_page.dart';
 
-class AuthPage extends ConsumerWidget {
-  const AuthPage({super.key});
+class AuthGate extends ConsumerWidget {
+  const AuthGate({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

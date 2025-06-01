@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 
 import 'firebase_options.dart';
-import 'presentation/splash/splash_page.dart';
+import 'presentation/pages/splash/splash_page.dart';
 
 void main() async {
   await initHiveForFlutter();

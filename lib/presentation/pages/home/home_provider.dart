@@ -1,8 +1,8 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-import '../../data/repositories/gql_client.dart';
-import '../../domain/usecases/get_viewer_login_usecase.dart';
+import '../../../data/repositories/gql_client.dart';
+import '../../../domain/usecases/get_viewer_login_usecase.dart';
 
 part 'home_provider.g.dart';
 
