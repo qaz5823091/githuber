@@ -66,4 +66,5 @@ class DefaultFirebaseOptions {
     projectId: 'githuber-56ca8',
     storageBucket: 'githuber-56ca8.firebasestorage.app',
   );
+
 }
